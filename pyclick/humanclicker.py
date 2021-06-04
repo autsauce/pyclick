@@ -22,7 +22,7 @@ class HumanClicker():
 
         pyautogui.PAUSE = duration / len(humanCurve.points)
         for point in humanCurve.points:
-            pyautogui.moveTo(point)
+            pyautogui.moveTo(point,duration)
 
     def click(self):
         pyautogui.click()
