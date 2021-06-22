@@ -21,7 +21,6 @@ class HumanClicker():
         if not humanCurve:
             humanCurve = HumanCurve(fromPoint, toPoint)
 
-        #pag.PAUSE = .001
         pag.PAUSE = duration / len(humanCurve.points)
         for point in humanCurve.points:
             pag.moveTo(point)
